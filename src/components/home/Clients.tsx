@@ -9,11 +9,11 @@ export default function Clients() {
 
         <div className="flex flex-wrap justify-center gap-8">
           {[
-            { src: '/IC-8.svg', alt: 'АйСи Эйт' },
-            { src: '/Logistic.png', alt: 'АйСи Логистик' },
-            { src: '/Volna.png', alt: 'Волна' },
-            { src: '/Win.png', alt: 'Win Mobile' },
-            { src: '/Telekom.png', alt: '+7 Телеком' },
+            { src: '/clients/IC-8.svg', alt: 'АйСи Эйт' },
+            { src: '/clients/Logistic.png', alt: 'АйСи Логистик' },
+            { src: '/clients/Volna.png', alt: 'Волна' },
+            { src: '/clients/Win.png', alt: 'Win Mobile' },
+            { src: '/clients/Telekom.png', alt: '+7 Телеком' },
           ].map((item, i) => (
             <div
               key={i}
