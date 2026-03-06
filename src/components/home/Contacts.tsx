@@ -5,7 +5,7 @@ export default function Contacts() {
         <hr className="border-b border-black-0 mt-0 m-20 mb-10" />
         <h2 className="text-4xl font-semibold mb-8">{`{ КОНТАКТЫ }`}</h2>
 
-        <div className="mx-auto shadow-lg bg-white p-10 max-w-[1000px] rounded-xl flex flex-col items-center justify-center md:flex-row gap-6">
+        <div className="mx-auto shadow-lg bg-white p-14 max-w-[1000px] rounded-xl flex flex-col items-center justify-center md:flex-row gap-6">
           <div className="md:w-1/2 w-full">
             <h1 className="flex-1 text-3xl font-bold leading-relaxed">
               <span className="text-main-3">Связаться</span> с нами вы можете по
