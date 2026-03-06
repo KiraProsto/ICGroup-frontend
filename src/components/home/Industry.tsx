@@ -10,7 +10,7 @@ export default function Industry() {
             <h3 className="text-xl font-semibold text-main-3">
               Информационные технологии
             </h3>
-            <p className="text-sm leading-relaxed">
+            <p className="text-base leading-relaxed">
               Разработка цифровых продуктов и IT‑решений для бизнеса.
             </p>
           </div>
@@ -19,7 +19,7 @@ export default function Industry() {
             <h3 className="text-xl font-semibold text-main-3">
               Телекоммуникации
             </h3>
-            <p className="text-sm leading-relaxed">
+            <p className="text-base leading-relaxed">
               Телеком‑инфраструктура, услуги связи и цифровые сервисы для
               абонентов.
             </p>
@@ -27,14 +27,14 @@ export default function Industry() {
 
           <div className="bg-white rounded-2xl p-8 flex flex-col gap-4 shadow-lg">
             <h3 className="text-xl font-semibold text-main-3">Логистика</h3>
-            <p className="text-sm leading-relaxed">
+            <p className="text-base leading-relaxed">
               Комплексные логистические решения и оптимизация цепочек поставок.
             </p>
           </div>
 
           <div className="bg-white rounded-2xl p-8 flex flex-col gap-4 shadow-lg">
             <h3 className="text-xl font-semibold text-main-3">Строительство</h3>
-            <p className="text-sm leading-relaxed">
+            <p className="text-base leading-relaxed">
               Инфраструктурные, коммерческие и промышленные строительные
               проекты.
             </p>

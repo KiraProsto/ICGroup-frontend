@@ -5,7 +5,7 @@ export default function About() {
         <h2 className="text-4xl font-semibold mb-8">{`{ О НАС }`}</h2>
 
         <div className=" grid md:grid-cols-2 gap-10">
-          <div className="text-2xl font-normal leading-snug">
+          <div className="text-base font-normal leading-snug">
             Ядро развития бизнес‑направлений —
             <span className="text-main-3">
               {' '}
@@ -15,7 +15,7 @@ export default function About() {
           </div>
 
           <div className="border-l-4 border-main-3 pl-6">
-            <p className="text-xl font-normal leading-snug">
+            <p className="text-base font-normal leading-snug">
               Сформирована команда топ‑менеджеров с уникальным опытом реализации
               сложных проектов в Узбекистане, Украине, Казахстане, Африке.
             </p>
