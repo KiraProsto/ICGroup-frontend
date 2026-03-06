@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer className="bg-white text-black-9 py-10 px-5">
-      <hr className="border-b border-black-0 m-20 mb-10" />
+    <footer className="bg-gray-0 py-10 px-5">
+      <hr className="border-b border-black-0 mt-0 m-20 mb-10" />
       <div className="container mx-auto grid grid-cols-2 md:grid-cols-3 gap-4">
         <div className="order-1 md:order-none">
           <h3 className="text-lg font-semibold mb-4">Активы</h3>
