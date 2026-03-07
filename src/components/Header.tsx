@@ -21,7 +21,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="bg-black-9 text-white">
+    <header className="sticky top-0 z-10 bg-black-9 text-white">
       <Container className="flex items-center gap-8 justify-between h-[70px]">
         <Link href="/" className="flex-shrink-0">
           <Image
