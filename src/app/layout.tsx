@@ -7,6 +7,7 @@ import '@mantine/core/styles.css';
 export const metadata: Metadata = {
   title: 'IC Group',
   description: 'Corporate website',
+  icons: '/favicon.svg',
 };
 
 export default function RootLayout({
