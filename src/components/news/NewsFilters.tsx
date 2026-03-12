@@ -1,4 +1,4 @@
-import { MultiSelect } from '@mantine/core';
+import { MultiSelect, Select, TextInput } from '@mantine/core';
 import { DatePickerInput } from '@mantine/dates';
 import Image from 'next/image';
 import '@mantine/dates/styles.css';
@@ -8,13 +8,24 @@ export default function NewsFilters() {
     <section className="pt-12 px-5 bg-gray-0">
       <div className="max-w-screen-xl mx-auto">
         <div className="flex gap-4 items-center flex-wrap">
-          <select
-            className="text-base px-3 py-1 pr-8 border border-gray-2 rounded-md 
-                       bg-[url('/news/arrow.svg')] bg-no-repeat bg-[right_14px_center] appearance-none"
-          >
-            <option value="new">Сначала новые</option>
-            <option value="old">Сначала старые</option>
-          </select>
+          <Select
+            data={[
+              { value: 'new', label: 'Сначала новые' },
+              { value: 'old', label: 'Сначала старые' },
+            ]}
+            placeholder="Сортировка"
+            className="min-w-[180px]"
+            rightSection={
+              <Image
+                src="/news/arrow.svg"
+                alt="стрелочка"
+                className="w-2"
+                width={16}
+                height={16}
+              />
+            }
+            rightSectionWidth={30}
+          />
 
           <MultiSelect
             data={[
@@ -36,20 +47,26 @@ export default function NewsFilters() {
             clearable
           />
 
-          <div className="relative ml-auto flex items-center">
-            <input
-              type="text"
-              placeholder="Найти публикацию"
-              className="text-base leading-relaxed border border-gray-3 rounded-md px-3 py-1 pr-11 placeholder:text-black-9"
-            />
-            <Image
-              src="/news/search.svg"
-              alt="Поиск"
-              className="absolute right-3 pointer-events-none"
-              width={16}
-              height={16}
-            />
-          </div>
+          <TextInput
+            placeholder="Найти публикацию"
+            className="ml-0 md:ml-auto"
+            rightSection={
+              <Image
+                src="/news/search.svg"
+                alt="Поиск"
+                width={16}
+                height={16}
+                className="pointer-events-none"
+              />
+            }
+            rightSectionWidth={36}
+            styles={{
+              input: {
+                fontSize: '16px',
+                paddingRight: '40px',
+              },
+            }}
+          />
         </div>
       </div>
     </section>
